@@ -26,9 +26,9 @@ const Index = () => {
           </div>
           <h1 className="text-4xl md:text-5xl font-black text-foreground leading-tight">
             This Website is{" "}
-            <span className="text-primary animate-shimmer" style={{ backgroundImage: "linear-gradient(90deg, hsl(45 100% 55%), hsl(35 100% 70%), hsl(45 100% 55%))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-              Unavailable
-            </span>{" "}
+          <span className="text-primary animate-shimmer" style={{ backgroundImage: "linear-gradient(90deg, hsl(199 100% 50%), hsl(199 80% 70%), hsl(199 100% 50%))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+            Unavailable
+          </span>{" "}
             in Your Region
           </h1>
           <p className="text-lg text-muted-foreground max-w-lg mx-auto">
@@ -65,7 +65,7 @@ const Index = () => {
               href="https://wa.me/message"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[hsl(142,70%,40%)] hover:bg-[hsl(142,70%,35%)] text-white font-semibold px-6 py-3 rounded-xl transition-all hover:scale-105 w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2 bg-[hsl(142,70%,40%)] hover:bg-[hsl(142,70%,35%)] text-foreground font-semibold px-6 py-3 rounded-xl transition-all hover:scale-105 w-full sm:w-auto justify-center"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp
