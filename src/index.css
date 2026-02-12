@@ -6,41 +6,41 @@
 
 @layer base {
   :root {
-    --background: 220 20% 7%;
-    --foreground: 210 20% 92%;
+    --background: 216 28% 7%;
+    --foreground: 210 20% 95%;
 
-    --card: 220 18% 10%;
-    --card-foreground: 210 20% 92%;
+    --card: 216 25% 11%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 220 18% 10%;
-    --popover-foreground: 210 20% 92%;
+    --popover: 216 25% 11%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 45 100% 55%;
-    --primary-foreground: 220 20% 7%;
+    --primary: 199 100% 50%;
+    --primary-foreground: 216 28% 7%;
 
-    --secondary: 220 15% 16%;
+    --secondary: 216 20% 15%;
     --secondary-foreground: 210 20% 85%;
 
-    --muted: 220 15% 14%;
+    --muted: 216 18% 14%;
     --muted-foreground: 215 15% 55%;
 
-    --accent: 200 80% 55%;
-    --accent-foreground: 220 20% 7%;
+    --accent: 199 100% 50%;
+    --accent-foreground: 216 28% 7%;
 
     --destructive: 0 72% 55%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
-    --ring: 45 100% 55%;
+    --border: 216 18% 18%;
+    --input: 216 18% 18%;
+    --ring: 199 100% 50%;
 
     --radius: 0.75rem;
 
-    --gradient-gold: linear-gradient(135deg, hsl(45 100% 55%), hsl(35 100% 45%));
-    --gradient-dark: linear-gradient(180deg, hsl(220 20% 7%), hsl(220 25% 4%));
-    --gradient-card: linear-gradient(135deg, hsl(220 18% 12%), hsl(220 18% 8%));
-    --glow-gold: 0 0 60px hsl(45 100% 55% / 0.15);
-    --glow-accent: 0 0 40px hsl(200 80% 55% / 0.1);
+    --gradient-primary: linear-gradient(135deg, hsl(199 100% 50%), hsl(199 80% 40%));
+    --gradient-dark: linear-gradient(180deg, hsl(216 28% 7%), hsl(216 30% 4%));
+    --gradient-card: linear-gradient(135deg, hsl(216 25% 13%), hsl(216 25% 9%));
+    --glow-primary: 0 0 60px hsl(199 100% 50% / 0.15);
+    --glow-accent: 0 0 40px hsl(199 100% 50% / 0.1);
   }
 }
 
@@ -58,8 +58,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: var(--glow-gold); }
-  50% { box-shadow: 0 0 80px hsl(45 100% 55% / 0.25); }
+  0%, 100% { box-shadow: var(--glow-primary); }
+  50% { box-shadow: 0 0 80px hsl(199 100% 50% / 0.25); }
 }
 
 @keyframes float {
