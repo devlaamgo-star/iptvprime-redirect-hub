@@ -1,8 +1,24 @@
 import { Shield, MapPin, Mail, MessageCircle, AlertTriangle, Globe, Lock } from "lucide-react";
 
 const Index = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IPTV Prime",
+    "url": "https://iptvprime.us",
+    "description": "Premium legally licensed IPTV service available in the United States and Canada.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@iptvprime.us",
+      "contactType": "customer service"
+    },
+    "areaServed": ["US", "CA"]
+  };
+
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-4 py-12 relative overflow-hidden">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <main className="min-h-screen bg-background flex flex-col items-center justify-center px-4 py-12 relative overflow-hidden" role="main">
       {/* Background effects */}
       <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at 50% 0%, hsl(45 100% 55% / 0.08), transparent 60%)" }} />
       <div className="absolute inset-0 opacity-20" style={{ background: "radial-gradient(ellipse at 80% 80%, hsl(200 80% 55% / 0.06), transparent 50%)" }} />
@@ -102,7 +118,8 @@ const Index = () => {
           © {new Date().getFullYear()} IPTV Prime. All rights reserved.
         </p>
       </div>
-    </div>
+      </main>
+    </>
   );
 };
 
