@@ -78,7 +78,7 @@ const Index = () => {
           <h2 className="text-xl font-bold text-foreground">Get in Touch</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href="https://wa.me/message"
+              href="https://api.whatsapp.com/send/?phone=14508040166&text&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[hsl(142,70%,40%)] hover:bg-[hsl(142,70%,35%)] text-foreground font-semibold px-6 py-3 rounded-xl transition-all hover:scale-105 w-full sm:w-auto justify-center"
